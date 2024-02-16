@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>ЗЕЛЕНЫЙ СВЕТ</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.css">
+
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="body-wrap">
+		<header class="header" id="header">
+			<nan class="nav">
+				<div class="container">
+					<div class="nav__box q">
+						<a href="main.html" class="nav__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<ul class="nav__list q">
+							<li>
+								<a href="#pay" class="go_to">
+									Стоимость
+								</a>
+							</li>
+							<li>
+								<a href="#item" class="go_to">
+									Автопарк
+								</a>
+							</li>
+							<li>
+								<a href="#services" class="go_to">
+									Услуги
+								</a>
+							</li>
+							<li>
+								<a href="#exp" class="go_to">
+									Наш опыт
+								</a>
+							</li>
+							<li>
+								<a href="#contacts" class="go_to">
+									Контакты
+								</a>
+							</li>
+						</ul>
+						<div class="nav__info q">
+							<div class="nav__item">
+								<p class="nav__name">
+									Почта
+								</p>
+								<a href="mailto:" class="nav__mail">
+									tk.zit@ya.ru
+								</a>
+							</div>
+							<div class="nav__item">
+								<p class="nav__name">
+									Телефон
+								</p>
+								<a href="tel:88001002826" class="nav__tel">
+									8 800 100 2826
+								</a>
+							</div>
+							<a href="#" class="nav__btn btn">
+								Обратный звонок
+							</a>
+							<div class="nav__links q">
+								<a href="#" class="nav__social q" target="_blank">
+									<img src="img/a1.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="nav__social q" target="_blank">
+									<img src="img/a2.svg" alt="" class="svg">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu">
+					<a href="#" class="nav__btn btn">
+						Обратный звонок
+					</a>
+					<ul class="nav__list q">
+						<li>
+							<a href="#pay" class="go_to">
+								Стоимость
+							</a>
+						</li>
+						<li>
+							<a href="#item" class="go_to">
+								Автопарк
+							</a>
+						</li>
+						<li>
+							<a href="#services" class="go_to">
+								Услуги
+							</a>
+						</li>
+						<li>
+							<a href="#exp" class="go_to">
+								Наш опыт
+							</a>
+						</li>
+						<li>
+							<a href="#contacts" class="go_to">
+								Контакты
+							</a>
+						</li>
+					</ul>
+					<div class="nav__info">
+						<div class="nav__links q">
+							<a href="#" class="nav__social q" target="_blank">
+								<img src="img/a1.svg" alt="" class="svg">
+							</a>
+							<a href="#" class="nav__social q" target="_blank">
+								<img src="img/a2.svg" alt="" class="svg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</nan>
+			<div class="container">
+				<div class="header__box q">
+					<div class="header__content">
+						<h1>
+							Срочные <span>>>>>></span> автомобильные <span>>>>>></span> перевозки грузов до 10 тон
+						</h1>
+						<p>
+							Упакуем, погрузим, рагрузим и доставим ваш груз в полной сохранности!
+						</p>
+						<a href="#" class="header__btn btn" id="pay">
+							Получить скидку
+						</a>
+					</div>
+					<img src="img/main.svg" alt="">
+				</div>
+			</div>
+		</header>
+		<section class="pay">
+			<div class="container">
+				<div class="pay__box">
+					<h2>
+						Рассчитать стоимость перевозки
+					</h2>
+					<form action="#" class="pay__form q">
+						<div class="pay__item">
+							<div class="pay__content">
+								<div id="incdec" class="q">
+									<div class="pay__left ">
+										<p class="pay__label">
+											Вес
+										</p>
+										<div class="pay__area q">
+											<input type="number" value="0" />
+											<p>
+												тон
+											</p>
+										</div>
+									</div>
+									<div class="pay__row q">
+										<div id="down">
+											<img src="img/min.svg" />
+										</div>
+										<div id="up">
+											<img src="img/plus.svg">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pay__item">
+							<div class="pay__content">
+								<div id="incdec2" class="q">
+									<div class="pay__left ">
+										<p class="pay__label">
+											Расстояние
+										</p>
+										<div class="pay__area q">
+											<input type="number" value="0" />
+											<p>
+												км
+											</p>
+										</div>
+									</div>
+									<div class="pay__row q">
+										<div id="down2">
+											<img src="img/min.svg" />
+										</div>
+										<div id="up2">
+											<img src="img/plus.svg">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="input-container ic1">
+							<input id="firstname" class="input" type="text" placeholder=" " />
+							<label for="firstname" class="placeholder">Ваше имя</label>
+						</div>
+						<div class="input-container ic1">
+							<input id="tel" class="input tel" type="tel" placeholder=" " />
+							<label for="tel" class="placeholder">Телефон</label>
+						</div>
+						<button class="btn pay__btn">
+							Оставить заявку
+						</button>
+					</form>
+					<div class="pay__bottom q">
+						<div class="pay__result q">
+							<p class="pay__name">
+								Стоимость перевозки:
+							</p>
+							<p class="pay__sum">
+								<span>––––</span> руб.
+							</p>
+						</div>
+						<p class="pay__policy">
+							Отправляя данные формы вы соглашаетесь с <a href="#" target="_blank"> обработкой персональных
+								данных</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="item" id="item">
+			<div class="container">
+				<h2>
+					Наш автопарк
+				</h2>
+				<div class="item__box q">
+					<div class="item__block">
+						<img src="img/item.png" alt="" class="item__pic">
+						<div class="item__info">
+							<div class="item__row q">
+								<p>
+									Вес
+								</p>
+								<p>
+									до 1.5 т
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Объем
+								</p>
+								<p>
+									до 16 м3
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Габариты
+								</p>
+								<p>
+									4x2x2
+								</p>
+							</div>
+						</div>
+						<a href="#" class="item__btn btn btn_2">
+							Заказать доставку
+						</a>
+					</div>
+					<div class="item__block">
+						<img src="img/item.png" alt="" class="item__pic">
+						<div class="item__info">
+							<div class="item__row q">
+								<p>
+									Вес
+								</p>
+								<p>
+									до 1.5 т
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Объем
+								</p>
+								<p>
+									до 16 м3
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Габариты
+								</p>
+								<p>
+									4x2x2
+								</p>
+							</div>
+						</div>
+						<a href="#" class="item__btn btn btn_2">
+							Заказать доставку
+						</a>
+					</div>
+					<div class="item__block">
+						<img src="img/item.png" alt="" class="item__pic">
+						<div class="item__info">
+							<div class="item__row q">
+								<p>
+									Вес
+								</p>
+								<p>
+									до 1.5 т
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Объем
+								</p>
+								<p>
+									до 16 м3
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Габариты
+								</p>
+								<p>
+									4x2x2
+								</p>
+							</div>
+						</div>
+						<a href="#" class="item__btn btn btn_2">
+							Заказать доставку
+						</a>
+					</div>
+					<div class="item__block">
+						<img src="img/item.png" alt="" class="item__pic">
+						<div class="item__info">
+							<div class="item__row q">
+								<p>
+									Вес
+								</p>
+								<p>
+									до 1.5 т
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Объем
+								</p>
+								<p>
+									до 16 м3
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Габариты
+								</p>
+								<p>
+									4x2x2
+								</p>
+							</div>
+						</div>
+						<a href="#" class="item__btn btn btn_2">
+							Заказать доставку
+						</a>
+					</div>
+					<div class="item__block">
+						<img src="img/item.png" alt="" class="item__pic">
+						<div class="item__info">
+							<div class="item__row q">
+								<p>
+									Вес
+								</p>
+								<p>
+									до 1.5 т
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Объем
+								</p>
+								<p>
+									до 16 м3
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Габариты
+								</p>
+								<p>
+									4x2x2
+								</p>
+							</div>
+						</div>
+						<a href="#" class="item__btn btn btn_2">
+							Заказать доставку
+						</a>
+					</div>
+					<div class="item__block">
+						<img src="img/item.png" alt="" class="item__pic">
+						<div class="item__info">
+							<div class="item__row q">
+								<p>
+									Вес
+								</p>
+								<p>
+									до 1.5 т
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Объем
+								</p>
+								<p>
+									до 16 м3
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Габариты
+								</p>
+								<p>
+									4x2x2
+								</p>
+							</div>
+						</div>
+						<a href="#" class="item__btn btn btn_2">
+							Заказать доставку
+						</a>
+					</div>
+					<div class="item__block">
+						<img src="img/item.png" alt="" class="item__pic">
+						<div class="item__info">
+							<div class="item__row q">
+								<p>
+									Вес
+								</p>
+								<p>
+									до 1.5 т
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Объем
+								</p>
+								<p>
+									до 16 м3
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Габариты
+								</p>
+								<p>
+									4x2x2
+								</p>
+							</div>
+						</div>
+						<a href="#" class="item__btn btn btn_2">
+							Заказать доставку
+						</a>
+					</div>
+					<div class="item__block">
+						<img src="img/item.png" alt="" class="item__pic">
+						<div class="item__info">
+							<div class="item__row q">
+								<p>
+									Вес
+								</p>
+								<p>
+									до 1.5 т
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Объем
+								</p>
+								<p>
+									до 16 м3
+								</p>
+							</div>
+							<div class="item__row q">
+								<p>
+									Габариты
+								</p>
+								<p>
+									4x2x2
+								</p>
+							</div>
+						</div>
+						<a href="#" class="item__btn btn btn_2">
+							Заказать доставку
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="services" id="services">
+			<div class="container">
+				<h2>
+					Наши услуги
+				</h2>
+				<div class="services__box">
+					<div class="services__item q">
+						<img src="img/fig1.svg" alt="" class="svg services__fig">
+						<div class="services__content">
+							<p class="services__name">
+								Коммерческие перевозки
+							</p>
+							<p class="services__text">
+								С НДС или без. Коммерческими называются грузоперевозки, осуществляемые на основании заключенного
+								договора.
+							</p>
+							<a href="#" class="services__btn btn">
+								Рассчитать перевозку
+							</a>
+						</div>
+						<img src="img/ser1.png" alt="" class="services__pic">
+						<img src="img/fig2.svg" alt="" class="services__arrows svg">
+					</div>
+					<div class="services__item q">
+						<img src="img/fig1.svg" alt="" class="svg services__fig">
+						<div class="services__content">
+							<p class="services__name">
+								Домашние переезды по России
+							</p>
+							<p class="services__text">
+								С НДС или без. Коммерческими называются грузоперевозки, осуществляемые на основании заключенного
+								договора.
+							</p>
+							<a href="#" class="services__btn btn">
+								Рассчитать переезд
+							</a>
+						</div>
+						<img src="img/ser2.png" alt="" class="services__pic">
+						<img src="img/fig3.svg" alt="" class="services__arrows svg">
+					</div>
+					<div class="services__item q">
+						<img src="img/fig1.svg" alt="" class="svg services__fig">
+						<div class="services__content">
+							<p class="services__name">
+								Перевозка автомобилей
+							</p>
+							<p class="services__text">
+								С НДС или без. Коммерческими называются грузоперевозки, осуществляемые на основании заключенного
+								договора. Как правило, они связаны с последующей реализацией перевозимой продукции.
+							</p>
+						</div>
+						<img src="img/ser3.png" alt="" class="services__pic">
+						<img src="img/fig2.svg" alt="" class="services__arrows svg">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="exp" id="exp">
+			<div class="container">
+				<div class="exp__top q">
+					<h2>
+						Наш опыт
+					</h2>
+					<div class="exp__arrows q">
+						<div class="swiper-button-prev1 exp__arrow">
+							<img src="img/left.svg" alt="" class="svg">
+						</div>
+						<div class="swiper-button-next1 exp__arrow">
+							<img src="img/right.svg" alt="" class="svg">
+						</div>
+					</div>
+				</div>
+				<div class="swiper1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/pic1.png" alt="" class="exp__pic">
+							<p class="exp__text">
+								Доставили более 4 миллионов пар обуви за 2021 год по торговым центрам РФ.
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/pic2.png" alt="" class="exp__pic">
+							<p class="exp__text">
+								Перевезли негабаритное буровое оборудование для строительства метрополитена.
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/pic3.png" alt="" class="exp__pic">
+							<p class="exp__text">
+								Перевезли негабаритное буровое оборудование для строительства метрополитена.
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/pic4.png" alt="" class="exp__pic">
+							<p class="exp__text">
+								Перевезли негабаритное буровое оборудование для строительства метрополитена.
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/pic1.png" alt="" class="exp__pic">
+							<p class="exp__text">
+								Доставили более 4 миллионов пар обуви за 2021 год по торговым центрам РФ.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination1"></div>
+			</div>
+		</section>
+		<section class="clients" id="clients">
+			<div class="container">
+				<h2>
+					Наши клиенты
+				</h2>
+				<div class="clients__box q">
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo1.png" alt=""></div>
+						<p>
+							ФСК Россети
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo2.png" alt=""></div>
+						<p>
+							РЖД
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo3.png" alt=""></div>
+						<p>
+							Ростелеком
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo4.png" alt=""></div>
+						<p>
+							DHL
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo5.png" alt=""></div>
+						<p>
+							ТД петрович
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo6.png" alt=""></div>
+						<p>
+							МТС
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo1.png" alt=""></div>
+						<p>
+							ФСК Россети
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo2.png" alt=""></div>
+						<p>
+							РЖД
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo3.png" alt=""></div>
+						<p>
+							Ростелеком
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo4.png" alt=""></div>
+						<p>
+							DHL
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo5.png" alt=""></div>
+						<p>
+							ТД петрович
+						</p>
+					</div>
+					<div class="clients__item q">
+						<div class="clients__block q"><img src="img/logo6.png" alt=""></div>
+						<p>
+							МТС
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="rec" id="rec">
+			<div class="container">
+				<h2>
+					Рекомендательные письма
+				</h2>
+				<div class="swiper2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="img/el1.png" data-fancybox="gallery" class="rec__item">
+								<img src="img/el1.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/el2.png" data-fancybox="gallery" class="rec__item">
+								<img src="img/el2.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/el3.png" data-fancybox="gallery" class="rec__item">
+								<img src="img/el3.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/el4.png" data-fancybox="gallery" class="rec__item">
+								<img src="img/el4.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/el1.png" data-fancybox="gallery" class="rec__item">
+								<img src="img/el1.png" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/el4.png" data-fancybox="gallery" class="rec__item">
+								<img src="img/el4.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination2"></div>
+			</div>
+		</section>
+		<footer class="footer" id="contacts">
+			<div class="container">
+				<h2>
+					Контакты
+				</h2>
+				<div class="footer__box q">
+					<div id="map"></div>
+					<div class="footer__content">
+						<div class="footer__flex q">
+							<div class="footer__item">
+								<p class="footer__name">
+									Адрес
+								</p>
+								<p class="footer__text">
+									Автозаводская ул., 23А, Москва
+								</p>
+							</div>
+							<div class="footer__item">
+								<p class="footer__name">
+									Телефон
+								</p>
+								<a href="tel:88001002826" class="footer__text">
+									8 800 100 2826
+								</a>
+							</div>
+							<div class="footer__item">
+								<p class="footer__name">
+									Email
+								</p>
+								<a href="mailto:tk.zit@ya.ru" class="footer__text">
+									tk.zit@ya.ru
+								</a>
+							</div>
+							<div class="footer__item">
+								<p class="footer__name">
+									Быстрая связь
+								</p>
+								<div class="footer__links q">
+									<a href="#" target="_blank">
+										WhatsApp
+									</a>
+									<a href="#" target="_blank">
+										Telegram
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__info">
+							<p>
+								© ТК Зеленый Свет 2024
+							</p>
+							<a href="#" target="_blank">
+								Политика конфиденциальности
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div style="display:none;">
+			<div class="box-modal" id="popup-call">
+				<div class="popup-call__box">
+					<div class="box-modal__close articmodal-close">
+						<img src="img/close.svg" alt="" class="svg">
+					</div>
+					<img src="img/popup.svg" alt="" class="popup__pic">
+					<div class="popup__wrap">
+						<h2 class="popup__name">
+							Обратный звонок
+						</h2>
+						<form action="#" class="pay__form">
+							<div class="input-container ic1">
+								<input id="firstname" class="input" type="text" placeholder=" " />
+								<label for="firstname" class="placeholder">Ваше имя</label>
+							</div>
+							<div class="input-container ic1">
+								<input id="tel" class="input tel" type="tel" placeholder=" " />
+								<label for="tel" class="placeholder">Телефон</label>
+							</div>
+							<div class="input-container ic1">
+								<input id="txt" class="input" type="text" placeholder=" " />
+								<label for="txt" class="placeholder">Еще что-нибудь</label>
+							</div>
+							<button class="btn pay__btn">
+								Оставить заявку
+							</button>
+						</form>
+						<p class="pay__policy">
+							Отправляя данные формы вы соглашаетесь <br> с <a href="#" target="_blank"> обработкой персональных
+								данных</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div style="display:none;">
+			<div class="box-modal" id="popup-thank">
+				<div class="popup-call__box">
+					<div class="box-modal__close articmodal-close">
+						<img src="/img/close.svg" alt="" class="svg">
+					</div>
+					<div class="popup__wrap">
+						<p class="popup__name">
+							Заявка успешно отправлена
+						</p>
+						<p class="popup__text">
+							Наш менеджер свяжется с Вами в ближайшее время, чтобы уточнить детали и отправить Ваш заказ
+						</p>
+						<a href="#" class="popup__close articmodal-close btn">
+							Отлично!
+						</a>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<script type="text/javascript">
+			ymaps.ready(init);
+
+			function init() {
+				var myMap = new ymaps.Map("map", {
+					// Центр карты, указываем коордианты
+					center: [55.701618, 37.644773],
+					// Масштаб, тут все просто
+					zoom: 13,
+					// Отключаем все элементы управления
+					controls: []
+				});
+
+				var myGeoObjects = [];
+
+				// Наша метка, указываем коордианты
+				myGeoObjects = new ymaps.Placemark([55.701618, 37.644773], {
+					balloonContentBody: 'Столя',
+				}, {
+					iconLayout: 'default#image',
+					// Путь до нашей картинки
+					iconImageHref: '/img/map.svg',
+					// Размер по ширине и высоте
+					iconImageSize: [96, 110],
+					// Смещение левого верхнего угла иконки относительно
+					// её «ножки» (точки привязки).
+					iconImageOffset: [-35, -35]
+				});
+
+				var clusterer = new ymaps.Clusterer({
+					clusterDisableClickZoom: false,
+					clusterOpenBalloonOnClick: false,
+				});
+
+				clusterer.add(myGeoObjects);
+				myMap.geoObjects.add(clusterer);
+				// Отлючаем возможность изменения масштаба
+				myMap.behaviors.disable('scrollZoom');
+
+			}
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+		<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+		<script type="text/javascript"
+			src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.js"></script>
+
+
+		<script src="js/all.js"></script>
+</body>
+
+</html>
